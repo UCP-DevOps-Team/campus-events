@@ -1,0 +1,101 @@
+/* === Global Styles === */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f5f5f5;
+	color: #222;
+}
+
+/* === Header & Navigation === */
+header {
+	background-color: #003366;
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+	margin: 0.2rem 0;
+	font-size: 1.8rem;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+nav ul li {
+	margin: 0 1rem;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #ffcc00;
+}
+
+/* === Main Content === */
+main {
+	flex: 1 0 auto;
+	max-width: 900px;
+	margin: 2rem auto;
+	padding: 1rem;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+	color: #003366;
+}
+
+/* === Footer === */
+footer {
+	background-color: #003366;
+	color: white;
+	text-align: center;
+	padding: 0.8rem;
+	margin-top: 2rem;
+	font-size: 0.9rem;
+}
+
+header,
+footer {
+	flex-shrink: 0;
+}
+
+/* === Reusable Components === */
+.btn {
+	display: inline-block;
+	background: #003366;
+	color: white;
+	padding: 0.6rem 1rem;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background: #0055aa;
+}
+
+img.responsive {
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+}

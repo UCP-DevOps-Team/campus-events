@@ -1,0 +1,19 @@
+{
+	"name": "campus-events",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html --dist-dir ./dist --public-url ./",
+		"docker:build": "docker image build -t campus-events:1.0 .",
+		"docker:run": "docker run -d -p 2222:80 campus-events:1.0",
+		"docker:stop": "docker ps -q --filter ancestor=campus-events:1.0 | xargs docker stop"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"parcel": "^2.16.1"
+	}
+}

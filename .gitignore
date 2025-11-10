@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Parcel & build
+.dist/
+dist/
+.parcel-cache/
+.cache/
+
+# Git & OS
+.git/
+.DS_Store
+.vscode/
+.env
+
+
+**/node_modules
+**/dist
