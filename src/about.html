@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Campus Events</title>
-		<link rel="stylesheet" href="../styles/style.css" />
-		<link rel="stylesheet" href="../styles/about.css" />
-	</head>
-	<body>
-		<header>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>About — Campus Events</title>
+	<link rel="stylesheet" href="../styles/style.css" />
+	<link rel="stylesheet" href="../styles/about.css" />
+</head>
+<body>
+	<header>
 			<h1>Campus Event Management</h1>
 			<nav>
 				<ul>
@@ -21,19 +21,54 @@
 			</nav>
 		</header>
 
-		<main>
-			<!-- Page-specific content goes here -->
-			<section>
-				<h2>Welcome to Campus Events</h2>
-				<p>
-					This is the base template. Replace this section with your
-					assigned content.
-				</p>
-			</section>
-		</main>
+	<main class="container">
+    	<section id="project-overview">
+			<h2>About the Project</h2>
+    		<p>This static site is built by the Campus Events Team to list upcoming university events and provide resources to students and staff.</p>
+    	</section>
 
-		<footer>
-			<p>© 2025 Campus Events | Developed by Team UCP-DevOps</p>
-		</footer>
-	</body>
+    	<section id="team">
+    		<h2>Meet the Team</h2>
+    		<ul class="team-list">
+				<li>
+					<h3>Abdullah Amir — Team Lead</h3>
+					<p>Responsible for repo setup, Dockerfile and final image.</p>
+				</li>
+				<li>
+					<h3>Aziz Subhani — About Page</h3>
+					<p>Designed and implemented the About page.</p>
+				</li>
+				<li>
+					<h3>Muhammad Touseef — About Page</h3>
+					<p>Designed and implemented the Gallery page.</p>
+				</li>
+				<li>
+					<h3>Talal Saleem — About Page</h3>
+					<p>Designed and implemented the Contact US page.</p>
+				</li>
+				<li>
+					<h3>Dalawar Ali — About Page</h3>
+					<p>Designed and implemented the Events page.</p>
+				</li>
+    		</ul>
+    	</section>
+
+    	<section id="mission">
+    		<h2>Our Mission</h2>
+    		<ul>
+				<li>Provide an easy-to-use event listing for the campus.</li>
+				<li>Showcase departmental seminars and workshops.</li>
+				<li>Encourage student participation and community building.</li>
+    		</ul>
+    	</section>
+	</main>
+
+	<footer class="site-footer">
+    	<p>&copy; <span id="year"></span> Your University — Campus Events</p>
+	</footer>
+
+	<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
 </html>
